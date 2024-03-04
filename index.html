@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Lady Malig</h1>
+        <h3>ISSA Certified Personal Trainer</h3>
+        <nav>
+            <ul>
+                <li><a href="javascript:void(0)" onclick="toggleSection('home')">Home</a></li>
+                <li><a href="javascript:void(0)" onclick="toggleSection('about')">About</a></li>
+                <li><a href="javascript:void(0)" onclick="toggleSection('contact')">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h2>Home</h2>
+        <p>Welcome to my website!</p>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" style="display:none;">
+        <h2>About</h2>
+        <p>I am an experienced personal trainer with a comprehensive background in high-intensity interval training (HIIT), community engagement, and military discipline. As a group fitness instructor at Functional 45, I specialize in HIIT, designing workouts that push my clients to their limits while ensuring safety and maximizing results. My dedication to fitness extends into my role as a group instructor for adult communities, where I bring enthusiasm, motivation, and a tailored approach to suit the unique needs of each participant. My approach to training is deeply influenced by my experience as an Air Force veteran, where I developed a robust understanding of military fitness training. This diverse range of experiences makes me a versatile and effective trainer, committed to helping my clients achieve their fitness goals with a focus on strength, endurance, and resilience.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" style="display:none;">
+    <h2>Contact</h2>
+    <p>Ready to transform your fitness journey? Reach out now!</p>
+    <form id="contactForm">
+        <input type="text" name="name" placeholder="Your Name" required /><br />
+        <input type="email" name="email" placeholder="Your Email" required /><br />
+        <textarea name="message" placeholder="Your Message" rows="4" required></textarea><br />
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+    <script>
+        function toggleSection(sectionId) {
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => {
+                if (section.id === sectionId) {
+                    section.style.display = 'block';
+                } else {
+                    section.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>
