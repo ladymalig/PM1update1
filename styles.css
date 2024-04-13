@@ -6,8 +6,6 @@
 
 html, body {
     height: 100%;
-    margin: 0;
-    padding: 0;
     font-family: 'Georgia', serif;
     background-color: #FAEBD7;
     color: #333;
@@ -15,32 +13,29 @@ html, body {
 }
 
 body {
-    border: 5px solid #333; /* Adds a border around the entire body */
     display: flex;
-    flex-direction: column; /* Keeps content vertically aligned */
-    justify-content: flex-start; /* Aligns content to the top */
-    align-items: center; /* Centers content horizontally */
-    padding: 20px; /* Adds some spacing inside the border */
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
 }
 
 section#about {
-    width: 60%; /* Adjust the width as needed */
-    margin: 0 auto; /* This centers the section */
-    padding: 20px; /* Optional padding for visual spacing */
-    text-align: left; /* Optional: if you want the text aligned to the left within the centered section */
-    display: block; /* This switches the display from flex to block, which respects the width and margin */
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: left;
+    display: block;
 }
 
-
 header {
-    width: 100%; /* Ensures the header spans the full width of the body */
-    background-color: #FFC0CB;
+    width: 100%;
+    border: 2px solid #A52A2A;
     padding: 20px 0;
-    text-align: center; /* Centers header content */
+    text-align: center;
 }
 
 header h1, header h3 {
-    margin: 0;
     color: #333;
 }
 
@@ -48,7 +43,7 @@ nav ul {
     list-style: none;
     background-color: transparent;
     padding: 10px 0;
-    text-align: center; /* Centers the navigation links */
+    text-align: center;
 }
 
 nav ul li {
@@ -67,8 +62,8 @@ nav ul li a:hover {
 }
 
 section {
-    width: 100%; /* Ensures sections span the full width */
-    text-align: center; /* Centers section content */
+    width: 100%;
+    text-align: center;
     padding: 20px 10px;
     margin-bottom: 20px;
 }
@@ -79,7 +74,6 @@ button {
     padding: 10px 20px;
     border: none;
     cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
 }
 
 button:hover {
