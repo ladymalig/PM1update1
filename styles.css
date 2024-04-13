@@ -4,17 +4,29 @@
     box-sizing: border-box;
 }
 
-body {
+body, html {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     font-family: 'Georgia', serif;
     background-color: #FAEBD7;
     color: #333;
     line-height: 1.6;
 }
 
+header, section {
+    width: 100%; /* You can adjust this width as needed */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 header {
     background-color: #FFC0CB;
     padding: 20px 0;
-    text-align: center;
 }
 
 header h1, header h3 {
@@ -25,7 +37,6 @@ header h1, header h3 {
 nav ul {
     list-style: none;
     background-color: transparent;
-    text-align: center;
     padding: 10px 0;
 }
 
@@ -45,7 +56,6 @@ nav ul li a:hover {
 }
 
 section {
-    text-align: center;
     padding: 20px 10px;
     margin-bottom: 20px;
 }
@@ -54,7 +64,7 @@ button {
     background-color: #FFC0CB;
     color: #333;
     padding: 10px 20px;
-    border: 2px solid #FFC0CB;
+    border: none; /* Removed border to match background color */
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
 }
